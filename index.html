@@ -182,6 +182,51 @@
             font-weight: 600;
         }
 
+        /* WADAH PENGEMBANG & LOGO INSTANSI */
+        .research-footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px dashed rgba(214, 163, 115, 0.3);
+            text-align: center;
+        }
+
+        .research-footer p {
+            font-size: 0.95rem;
+            text-align: center;
+            color: var(--muted-beige);
+            font-style: italic;
+            margin-bottom: 1.5rem;
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .logo-box {
+            width: 70px;
+            height: 70px;
+            border: 1px dashed rgba(214, 163, 115, 0.5);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.75rem;
+            color: var(--accent-gold);
+            background: rgba(28, 20, 17, 0.5);
+            transition: all 0.3s ease;
+        }
+
+        .logo-box img {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+        }
+
         /* KHUSUS RESPONSIVITAS PERANGKAT BERGERAK / MOBILE */
         @media (max-width: 992px) {
             .container { 
@@ -232,6 +277,11 @@
                 right: 25px; 
                 box-shadow: 0 4px 15px rgba(0,0,0,0.8);
             }
+            .logo-box {
+                width: 60px;
+                height: 60px;
+                font-size: 0.65rem;
+            }
         }
     </style>
 </head>
@@ -246,27 +296,45 @@
     
     <div class="media-side">
         <div class="media-wrapper">
-            <img class="media-item active" data-index="1" src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1000&q=80" alt="Bab 1">
-            <img class="media-item" data-index="2" src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1000&q=80" alt="Bab 2">
-            <img class="media-item" data-index="3" src="https://images.unsplash.com/photo-1611162458334-6b1d540b67c4?auto=format&fit=crop&w=1000&q=80" alt="Bab 3">
-            <img class="media-item" data-index="4" src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=1000&q=80" alt="Bab 4">
-            <img class="media-item" data-index="5" src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=1000&q=80" alt="Bab 5">
-            <img class="media-item" data-index="6" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1000&q=80" alt="Bab 6">
+            <img class="media-item active" data-index="0" src="https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=1000&q=80" alt="Pengantar">
+            <img class="media-item" data-index="1" src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1000&q=80" alt="Terroir & Kolonial">
+            <img class="media-item" data-index="2" src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1000&q=80" alt="Pasca Kemerdekaan">
+            <img class="media-item" data-index="3" src="https://images.unsplash.com/photo-1611162458334-6b1d540b67c4?auto=format&fit=crop&w=1000&q=80" alt="Tradisi Ngasak">
+            <img class="media-item" data-index="4" src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=1000&q=80" alt="Perkebunan Rakyat">
+            <img class="media-item" data-index="5" src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=1000&q=80" alt="Inovasi Gastronomi">
+            <img class="media-item" data-index="6" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1000&q=80" alt="Ritualitas Penyajian">
         </div>
     </div>
 
     <div class="narrative-side">
         
-        <section class="story-section active" data-index="1">
+        <section class="story-section active" data-index="0">
             <div class="card-content">
                 <div class="content-id">
-                    <span class="meta-tag">Bab I / Terroir & Kolonial</span>
+                    <span class="meta-tag">Pengantar / Harmoni Rasa</span>
+                    <h2>Signature Coffee Lereng Ijen-Raung</h2>
+                    <p>Secangkir kopi bukan sekadar peluruh dahaga atau pemicu stamina di pagi hari; ia adalah bentangan lembar sejarah, kearifan lokal, dan penanda identitas geografis suatu wilayah. Di bawah bayang-bayang megah Gunung Ijen dan Gunung Raung, terlahir sebuah identitas cita rasa kopi yang sangat khas. Melalui perjalanan panjang dari era pembatasan agraris hingga kebangkitan kedaulatan pangan petani, kawasan ini memendam kekayaan narasi gastronomi yang memikat untuk ditelusuri.</p>
+                    <p>Halaman ini mengajak Anda untuk menyelami lini masa transformasi sosial-ekonomi masyarakat lereng gunung lewat sebutan otentik <strong>"Kopi Jitu"</strong>. Sebuah kisah adaptasi masa lalu yang kini berevolusi secara elegan menjadi caturwangga <strong>Smart Gastronomy</strong> yang modern dan berdaya saing global. Gulir lebih dalam untuk menapaki jejak langkah rasa dari masa ke masa.</p>
+                </div>
+                <div class="content-en">
+                    <span class="meta-tag">Introduction / Harmony of Flavor</span>
+                    <h2>The Signature Coffee of Ijen-Raung Slopes</h2>
+                    <p>A cup of coffee is never just a simple beverage to quench thirst or spark morning energy; it is an expansive tapestry of history, indigenous wisdom, and a geographical hallmark of a landscape. Beneath the majestic shadows of Mount Ijen and Mount Raung, a profoundly unique coffee flavor profile was born. Through a historical trajectory bridging agrarian restriction to the rise of farmers' food sovereignty, this region nurtures a wealthy gastronomic narrative that is compelling to explore.</p>
+                    <p>This digital space cordially invites you to immerse yourself in the timeline of the socio-economic transformation of the mountain slope communities through the authentic expression of <strong>"Kopi Jitu"</strong>. A story of historical survival that has now elegantly evolved into a contemporary, globally competitive <strong>Smart Gastronomy</strong> prototype. Scroll deeper to retrace the heritage footsteps of flavor across generations.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="story-section" data-index="1">
+            <div class="card-content">
+                <div class="content-id">
+                    <span class="meta-tag">Terroir & Kolonial</span>
                     <h2>Jejak Kolonial dan Fondasi Perkebunan di Tanah Volkanik</h2>
                     <p>Sejarah kopi di kawasan dataran tinggi Ijen dan Raung, Kabupaten Bondowoso, tidak dapat dipisahkan dari kebijakan ekonomi global yang dibawa oleh Pemerintah Hindia Belanda pada abad ke-19. Wilayah lereng Ijen-Raung memiliki karakteristik geografis yang sangat spesifik, berada di ketinggian di atas 1.000 meter di atas permukaan laut dengan dominasi tanah andosol. Tanah volkanik ini terbentuk dari endapan material letusan gunung berapi yang kaya akan unsur hara, nitrogen, kalium, dan fosfat organik. Karakteristik tanah serta mikroklimat yang sejuk dengan curah hujan yang teratur menjadikan kawasan ini sebagai lokasi ideal untuk budidaya tanaman <em>Coffea arabica</em> (Kopi Arabika).</p>
                     <p>Melihat potensi investasi agraris yang masif tersebut, pemerintah kolonial bersama para pengusaha swasta Eropa mulai melakukan pembukaan lahan skala besar (<em>landopenstelling</em>). Proses penanaman modal ini melahirkan beberapa perkebunan besar yang legendaris di dataran tinggi Ijen, di antaranya adalah Perkebunan Jampit, Blawan, Pancur, dan Kalisat. Pada era tersebut, manajemen perkebunan menerapkan standar penyortiran dan pemrosesan yang sangat ketat untuk memenuhi selera pasar Eropa. Kopi arabika yang dihasilkan dari lereng Ijen dan Raung ini dikenal di pasar internasional dengan karakteristik cita rasa yang bersih (<em>clean cup</em>), tingkat keasaman yang seimbang (<em>medium acidity</em>), serta aroma kacang-kacangan (<em>nutty</em>) dan cokelat yang kuat. Produk ini menjadi salah satu komoditas ekspor andalan yang mengisi pundi-pundi keuangan Kerajaan Belanda melalui sistem perdagangan komoditas global.</p>
                 </div>
                 <div class="content-en">
-                    <span class="meta-tag">Chapter I / Terroir & Colonial Era</span>
+                    <span class="meta-tag">Terroir & Colonial Era</span>
                     <h2>Colonial Footprints and Plantation Foundations on Volcanic Soil</h2>
                     <p>The history of coffee in the Ijen and Raung highlands of Bondowoso Regency is inextricably linked to the global economic policies introduced by the Dutch East Indies government in the 19th century. The slopes of Ijen-Raung possess highly specific geographical features, situated at altitudes exceeding 1,000 meters above sea level and dominated by Andosol soils. This volcanic soil, rich in nutrients, nitrogen, potassium, and organic phosphate, was formed by volcanic eruptions. The distinct soil composition, combined with a cool microclimate and regular rainfall, rendered the area ideal for cultivating <em>Coffea arabica</em> (Arabica Coffee).</p>
                     <p>Recognizing this massive agrarian investment potential, the colonial government alongside European private entrepreneurs initiated large-scale land clearing (<em>landopenstelling</em>). This capitalization led to the establishment of several legendary large plantations in the Ijen highlands, including Jampit, Blawan, Pancur, and Kalisat. During this era, plantation management enforced stringent sorting and processing standards to satisfy the sophisticated European market. The Arabica coffee produced from these volcanic slopes became globally renowned for its clean cup profile, balanced medium acidity, and prominent nutty and chocolate aromas, serving as a primary export commodity that funded the Kingdom of the Netherlands through global trade networks.</p>
@@ -277,13 +345,13 @@
         <section class="story-section" data-index="2">
             <div class="card-content">
                 <div class="content-id">
-                    <span class="meta-tag">Bab II / Pasca Kemerdekaan</span>
+                    <span class="meta-tag">Pasca Kemerdekaan</span>
                     <h2>Pasca-Kemerdekaan dan Pembatasan Akses Konsumsi</h2>
                     <p>Setelah Indonesia memproklamasikan kemerdekaannya pada tahun 1945, aset-aset perkebunan milik kolonial tersebut dinasionalisasi oleh Pemerintah Republik Indonesia. Pengelolaan perkebunan besar di dataran tinggi Ijen dan Raung dialihkan ke bawah kendali perusahaan negara (yang kelak menjadi PT Perkebunan Nusantara atau PTPN). Fokus utama dari pengelolaan perkebunan negara pada masa-masa awal kemerdekaan hingga paruh kedua abad ke-20 tetap bertumpu pada pemenuhan target ekspor untuk menghasilkan devisa bagi negara yang baru berdiri.</p>
                     <p>Kondisi orientasi ekspor ini menciptakan sebuah paradoks ekonomi di tingkat lokal. Meskipun masyarakat asli di lereng Gunung Raung, termasuk di wilayah Kecamatan Sumberwringin, bekerja sebagai buruh petik, buruh pangkas, dan tenaga perawat tanaman di perkebunan, mereka tidak memiliki akses legal ataupun finansial untuk menikmati hasil panen kopi kualitas terbaik tersebut. Seluruh biji kopi kualitas prima (<em>grade 1</em>) langsung dikemas dan dikirim ke pelabuhan untuk diekspor. Akses masyarakat lokal terhadap komoditas kopi sangat terbatas, baik karena faktor daya beli yang rendah pada masa itu maupun karena regulasi pengamanan aset perkebunan negara yang ketat. Kopi dipandang sebagai barang mewah yang berada di luar jangkauan konsumsi harian masyarakat kelas pekerja di pedesaan lereng gunung.</p>
                 </div>
                 <div class="content-en">
-                    <span class="meta-tag">Chapter II / Post-Independence Era</span>
+                    <span class="meta-tag">Post-Independence Era</span>
                     <h2>Post-Independence and Restricted Access to Consumption</h2>
                     <p>Following Indonesia's declaration of independence in 1945, these colonial-owned plantation assets were nationalized by the Government of the Republic of Indonesia. The management of the large estates in the Ijen and Raung highlands was transferred to state-owned enterprises (which later evolved into PT Perkebunan Nusantara or PTPN). From the early days of independence through the second half of the 20th century, the state management remained heavily focused on fulfilling export targets to generate foreign exchange reserves for the newly founded nation.</p>
                     <p>This export-oriented approach created a sharp economic paradox at the local level. Even though the indigenous communities living on the slopes of Mount Raung—including those in the Sumberwringin District—worked closely as harvesters, pruners, and plantation laborers, they lacked both the legal and financial access to enjoy the high-quality coffee they cultivated. All premium specialty coffee beans (grade 1) were immediately packed and shipped to ports for export. Local access to coffee commodities was strictly limited by low purchasing power and rigid security regulations protecting state assets. Consequently, coffee was perceived as a luxury good completely out of reach for the daily consumption of the working-class communities in the mountain villages.</p>
@@ -294,7 +362,7 @@
         <section class="story-section" data-index="3">
             <div class="card-content">
                 <div class="content-id">
-                    <span class="meta-tag">Bab III / Tradisi Ngasak</span>
+                    <span class="meta-tag">Tradisi Ngasak</span>
                     <h2>Tradisi Ngasak dan Lahirnya Filosofi "Kopi Jitu" yang Asli</h2>
                     <p>Keterbatasan akses fisik dan ekonomi terhadap komoditas kopi mendorong masyarakat di kawasan Sumberwringin untuk melahirkan strategi adaptasi pengetatan pangan dan konsumsi. Strategi ini diwujudkan melalui sebuah kearifan lokal yang dikenal dengan istilah <strong>"Ngasak"</strong>. Secara harfiah dalam kultur agraris setempat, <em>ngasak</em> merujuk pada aktivitas mencari, mengumpulkan, dan memungut sisa-sisa hasil panen yang tertinggal di area perkebunan setelah masa panen raya selesai (<em>post-harvest gleaning</em>).</p>
                     <p>Dalam konteks perkebunan kopi, masyarakat lokal—biasanya kaum perempuan dan anak-anak—akan berjalan menyusuri barisan tanaman kopi untuk mencari biji kopi yang jatuh di tanah, tersembunyi di balik semak, atau buah kopi afkir yang tidak memenuhi standar petik buruh perkebunan. Proses pengumpulan ini membutuhkan ketekunan luar biasa karena biji kopi yang terkumpul sering kali dalam kondisi kering di pohon (<em>gelondong hitam</em>) atau bahkan sudah mengalami fermentasi alami di atas tanah. Biji-biji kopi hasil <em>ngasak</em> ini kemudian dibawa pulang untuk diproses secara mandiri dengan alat seadanya. Karena jumlah biji kopi yang didapatkan dari proses <em>ngasak</em> sangat sedikit dan tidak mencukupi untuk memenuhi kebutuhan konsumsi harian keluarga, masyarakat memutar otak agar volume kopi tersebut dapat digandakan. Dari sinilah lahir racikan legendaris bernama <strong>"Kopi Jitu"</strong>.</p>
@@ -302,7 +370,7 @@
                     <p>Namun, pencampuran jagung dalam proporsi yang sangat dominan (hampir 87%) memunculkan masalah baru pada aspek sensoris. Rasa dan aroma jagung gosong menjadi sangat kuat, mengalahkan aroma asli kopi yang memang sudah minim secara kualitas. Untuk mensiasati aroma jagung yang terlalu dominan tersebut, masyarakat lereng Ijen-Raung menambahkan rempah-rempah lokal ke dalam pemicu sangraian atau rebusan kopi. Rimpang jahe, khususnya jahe emprit atau jahe Jawa yang memiliki rasa pedas pekat, menjadi pilihan utama. Penambahan rimpang jahe ini terbukti efektif secara kimiawi dan organoleptik untuk memudarkan (menutupi) rasa serta aroma jagung gosong, sekaligus meningkatkan viskositas (kekentalan) cairan kopi jitu saat diseduh.</p>
                 </div>
                 <div class="content-en">
-                    <span class="meta-tag">Chapter III / The Ngasak Tradition</span>
+                    <span class="meta-tag">The Ngasak Tradition</span>
                     <h2>Ngasak Tradition and the Genesis of the Authentic "Kopi Jitu"</h2>
                     <p>The limitation of physical and economic access to coffee prompted the community in the Sumberwringin area to devise food tightening and survival consumption strategies. This coping mechanism manifested as a form of local wisdom known as <strong>"Ngasak"</strong>. In the local agrarian culture, <em>ngasak</em> literally refers to post-harvest gleaning—the activity of searching for and gathering leftover agricultural products abandoned in the fields after the main harvest season.</p>
                     <p>Within the context of coffee estates, local people—typically women and children—would forage through the rows of coffee trees to collect beans that had fallen to the ground, hidden behind bushes, or rejected cherries discarded by plantation workers. This gathering process demanded immense persistence, as the gleaned coffee was often either dried out on the branches (black pods) or had undergone natural fermentation on the damp ground. These gleaned beans were brought home and processed independently using basic household utensils. Because the amount of coffee gathered through <em>ngasak</em> was extremely limited and insufficient for daily family consumption, the locals found a way to multiply the volume, giving birth to a legendary blend named <strong>"Kopi Jitu"</strong>.</p>
@@ -315,14 +383,14 @@
         <section class="story-section" data-index="4">
             <div class="card-content">
                 <div class="content-id">
-                    <span class="meta-tag">Bab IV / Perkebunan Rakyat & IG</span>
+                    <span class="meta-tag">Perkebunan Rakyat & IG</span>
                     <h2>Era Perkebunan Rakyat dan Sertifikasi Indikasi Geografis (IG)</h2>
-                    <p>Memasuki akhir abad ke-20 dan awal abad ke-21, lanskap tata ruang agraria dan sosial-ekonomi di dataran tinggi Ijen-Raung mengalami transformasi struktural yang signifikan. Pemerintah mulai menggulirkan program redistribusi lahan hutan kemasyarakatan dan mendukung pembentukan Perkebunan Kopi Rakyat. Melalui pendampingan teknis dari Pusat Penelitian Kopi dan Kakao (Puslitkoka) serta berbagai lembaga akademis, masyarakat di Sumberwringin tidak lagi sekadar menjadi buruh petik di lahan negara, melainkan telah bertransformasi menjadi pemilik lahan perkebunan kopi mereka sendiri.</p>
+                    <p>Memasuki akhir abad ke-20 dan awal abad ke-21, lanskap tata ruang agraria dan sosial-ekonomi di dataran tinggi Ijen-Raung mengalami transformasi struktural yang signifikan. Pemerintah mulai menggulirkan program redistribusi lahan hutan kemasyarakatan dan mendukung pembentukan Perkebunan Kopi Rakyat. Melalui pendampingan teknis dari Pusat Penelitian Kopi dan Kakao (Puslitkoka) serta berbagai lembaga akademis, masyarakat di Sumberwringin tidak lagi sekadar menjadi buruh petik di lahan negara, mirisnya melainkan telah bertransformasi menjadi pemilik lahan perkebunan kopi mereka sendiri.</p>
                     <p>Masyarakat mulai mengadopsi teknik budidaya modern, mulai dari pemilihan varietas unggul (seperti USDA, Kartika, dan Cobra), teknik pemangkasan pohon pelindung, hingga manajemen pasca-panen yang higienis. Puncaknya, pada tahun 2013, komunitas petani kopi di kawasan ini berhasil mendapatkan sertifikasi <strong>Indikasi Geografis (IG)</strong> resmi untuk <strong>Kopi Arabika Java Ijen-Raung</strong>. Sertifikasi ini merupakan pengakuan hukum bertaraf internasional bahwa kopi yang dihasilkan dari kawasan ini memiliki karakteristik unik yang tidak dapat direplikasi di tempat lain, yang dipengaruhi oleh kombinasi faktor geografis, unsur hara tanah volkanik, dan metode pengolahan basah (<em>fully washed</em>) yang diterapkan secara disiplin oleh petani setempat.</p>
                     <p>Dengan terbukanya akses pasar, tingginya nilai ekonomi kopi rakyat, dan melimpahnya pasokan buah ceri kopi berkualitas prima di tingkat domestik, praktik <em>ngasak</em> secara bertahap mulai ditinggalkan oleh masyarakat Sumberwringin. Ketersediaan daya beli yang memadai membuat masyarakat kini mampu mengonsumsi hasil bumi terbaik mereka sendiri. Penggunaan biji jagung sebagai bahan pengoplos kopi secara total telah dihentikan, menandai berakhirnya era subsistensi pangan berbasis keterbatasan pangan di lereng gunung.</p>
                 </div>
                 <div class="content-en">
-                    <span class="meta-tag">Chapter IV / Smallholder Coffee & GI</span>
+                    <span class="meta-tag">Smallholder Coffee & GI</span>
                     <h2>The Era of Smallholder Plantations and Geographical Indication (GI)</h2>
                     <p>Entering the late 20th and early 21st centuries, the agrarian and socio-economic landscape of the Ijen-Raung highlands underwent significant structural transformation. The government initiated community-based forest land redistribution programs and supported the establishment of smallholder coffee plantations. Supported by technical assistance from the Indonesian Coffee and Cocoa Research Institute (ICCRI/Puslitkoka) and academic bodies, the community in Sumberwringin transitioned from mere daily laborers on state property into independent owners of their own coffee farms.</p>
                     <p>The local farmers embraced modern cultivation techniques, including selecting high-yielding varieties (such as USDA, Kartika, and Cobra), managing shade tree pruning, and practicing hygienic post-harvest processing. This long journey culminated in 2013 when the local coffee farming community successfully secured the official <strong>Geographical Indication (GI)</strong> certification for <strong>Java Ijen-Raung Arabica Coffee</strong>. This international legal recognition validated that the coffee grown in this specific terrain possesses distinctive characteristics that cannot be replicated elsewhere, shaped by the volcanic soil nutrients, microclimate, and the disciplined execution of the fully washed processing method.</p>
@@ -334,14 +402,14 @@
         <section class="story-section" data-index="5">
             <div class="card-content">
                 <div class="content-id">
-                    <span class="meta-tag">Bab V / Inovasi Gastronomi</span>
+                    <span class="meta-tag">Inovasi Gastronomi</span>
                     <h2>Redefinisi Jitu Modern — Kopi JAN (Jitu Arum Ndaru)</h2>
                     <p>Meskipun praktik mencampur jagung sudah tidak lagi dilakukan karena masyarakat kini mengonsumsi 100% kopi arabika murni kualitas global, memori kolektif terhadap terminologi "Kopi Jitu" tidak dibiarkan punah begitu saja. Bagi masyarakat Desa Wisata Sumberwringin, sejarah masa lalu yang penuh perjuangan tersebut justru dirawat dan diredefinisi menjadi sebuah produk budaya baru yang bernilai edukatif bagi wisatawan melalui kehadiran <strong>Kopi JAN (Jitu Arum Ndaru)</strong>.</p>
                     <p>Hari ini, istilah JITU didefinisikan ulang secara lebih filosofis dan elegan. <strong>JAN</strong> mengakar pada ingatan otentik racikan <strong>Jitu</strong>, disusul kata <strong>Arum</strong> yang melambangkan keharuman aroma lokal (Temuwangi), serta <strong>Ndaru</strong> yang berarti berkat atau anugerah atas bangkitnya kesejahteraan petani pasca-sertifikasi Indikasi Geografis.</p>
                     <p>Dalam sajian kontemporer Kopi JAN ini, penggunaan rimpang jahe tetap dipertahankan secara konsisten. Namun, fungsinya telah mengalami perubahan total secara organoleptik. Jahe—yang kini diolah melalui proses pembakaran terlebih dahulu untuk mengkaramelisasi kandungan gula alami di dalamnya—tidak lagi berfungsi untuk menutupi cacat rasa (<em>defect</em>) atau aroma jagung gosong. Sebaliknya, jahe bakar berpadu dengan <em>acidity</em> buah kopi Arabika Java Ijen-Raung untuk menciptakan lapis rasa baru (<em>layering flavor</em>): memberikan karakteristik cita rasa rempah yang hangat (<em>spicy warmness</em>), mempertajam keharuman (<em>arum</em>), dan memberikan efek relaksasi termal bagi tubuh.</p>
                 </div>
                 <div class="content-en">
-                    <span class="meta-tag">Chapter V / Gastronomic Innovation</span>
+                    <span class="meta-tag">Gastronomic Innovation</span>
                     <h2>Redefining Modern Jitu — Kopi JAN (Jitu Arum Ndaru)</h2>
                     <p>Although the practice of mixing corn has ceased now that the community consumes 100% pure specialty Arabica, the collective memory of the "Kopi Jitu" terminology has not been left to fade. For the community of the Sumberwringin Tourism Village, this history of resilience is preserved and redefined into an educational cultural product for visitors: <strong>Kopi JAN (Jitu Arum Ndaru)</strong>.</p>
                     <p>Today, the term JITU is reimagined through a philosophical lens. <strong>JAN</strong> honors the authentic roots of the <strong>Jitu</strong> blend, combined with <strong>Arum</strong>, representing the sweet aroma of local flora (Temuwangi), and <strong>Ndaru</strong>, a Javanese term for a divine blessing, signifying the socio-economic empowerment of the farmers following the Geographical Indication certification.</p>
@@ -353,19 +421,36 @@
         <section class="story-section" data-index="6">
             <div class="card-content">
                 <div class="content-id">
-                    <span class="meta-tag">Bab VI / Ritualitas & Hospitality</span>
+                    <span class="meta-tag">Ritualitas & Hospitality</span>
                     <h2>Ritualitas Penyajian Tradisional dan Keramahtamahan Masyarakat</h2>
                     <p>Di Desa Wisata Sumberwringin, penyajian Kopi JAN (Jitu Arum Ndaru) diintegrasikan dengan pemeliharaan artefak kebudayaan material lokal, yaitu penggunaan <strong>teko dan cangkir lurik</strong> berbahan seng atau enamel berpola hijau-putih kuno. Pilihan peralatan ini bukan sekadar estetika visual untuk kebutuhan dokumentasi wisatawan, melainkan representasi otentik dari kehidupan domestik masyarakat agraris pedesaan masa lalu. Bahan enamel dipilih karena durabilitasnya yang tinggi dan kemampuannya menahan penguapan suhu di area pegunungan yang cenderung dingin.</p>
                     <p>Penyajian menggunakan teko lurik ini berkaitan erat dengan aktivitas sosial tradisional yang disebut <strong>"Nginduh"</strong>. Dalam konteks sosiologis Sumberwringin, <em>nginduh</em> adalah penyediaan minuman kopi dalam volume besar di dalam teko untuk dinikmati secara komunal. Ketika masyarakat selesai bekerja dari ladang, mereka akan berkumpul di area dapur (<em>pawon</em>) di depan tungku api (<em>luweng</em>) untuk menghangatkan diri sekaligus menyambut tamu atau kerabat yang berkunjung.</p>
                     <p>Menghidangkan Kopi JAN dalam set teko dan cangkir lurik mencerminkan etika keramahtamahan (<em>hospitality</em>) lokal: bahwa tamu yang datang ke lereng gunung tidak sekadar disuguhi minuman, melainkan diundang untuk masuk ke dalam ruang kehangatan keluarga, mendengarkan narasi sejarah transisi dari kemiskinan pangan menuju kemandirian ekonomi, serta menikmati hasil diplomasi rasa antara komoditas kelas dunia dengan rempah pekarangan rakyat. Narasi inilah yang memberikan wawasan autentik dan mendalam bagi setiap wisatawan yang berkunjung ke kawasan cagar biosfer Ijen-Raung.</p>
                 </div>
                 <div class="content-en">
-                    <span class="meta-tag">Chapter VI / Rituals & Hospitality</span>
+                    <span class="meta-tag">Rituals & Hospitality</span>
                     <h2>Traditional Serving Rituals and Indigenous Hospitality</h2>
                     <p>In the Sumberwringin Tourism Village, the presentation of Kopi JAN (Jitu Arum Ndaru) is integrated with the preservation of local material culture: the use of vintage <strong>blotchy enamel teapots and mugs</strong> featuring the classic green-and-white *lurik* pattern. The choice of these utensils extends far beyond visual aesthetics for visitor engagement; it represents an authentic window into the domestic life of rural agrarian societies of the past. Enamel was originally favored for its high durability and its capacity to insulate heat against the cold mountain climate.</p>
                     <p>Serving coffee from this specific enamel pot is tied to a traditional social practice called <strong>"Nginduh"</strong>. In the sociological context of Sumberwringin, *nginduh* refers to preparing a large volume of coffee in a single pot to be shared communally. Upon returning from the fields, community members gather in the kitchen area (*pawon*) around the traditional hearth (*luweng*) to warm themselves, welcome guests, or converse with relatives.</p>
                     <p>Serving Kopi JAN in a traditional enamel set embodies the local philosophy of hospitality: guests visiting the mountain slopes are not merely served a beverage, but are invited into the warmth of the family circle. They are welcomed to listen to the history of transition from food scarcity to economic self-sufficiency, while enjoying a sensory diplomacy between a world-class commodity and homegrown backyard spices. This narrative provides an authentic and profound insight for every traveler journeying through the Ijen-Raung biosphere reserve.</p>
                 </div>
+
+                <div class="research-footer">
+                    <div class="content-id">
+                        <p>Aplikasi ini merupakan prototipe riset Smart Gastronomi Kopi, UPN "Veteran" Jawa Timur.</p>
+                    </div>
+                    <div class="content-en">
+                        <p>This application is a research prototype of Coffee Smart Gastronomy, UPN "Veteran" Jawa Timur.</p>
+                    </div>
+                    
+                    <div class="logo-container">
+                        <div class="logo-box"><img src="#" alt="Logo 1">Logo 1</div>
+                        <div class="logo-box"><img src="#" alt="Logo 2">Logo 2</div>
+                        <div class="logo-box"><img src="#" alt="Logo 3">Logo 3</div>
+                        <div class="logo-box"><img src="#" alt="Logo 4">Logo 4</div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
@@ -425,6 +510,5 @@
     sections.forEach(section => observer.observe(section));
 </script>
 
-    
 </body>
 </html>
