@@ -745,14 +745,24 @@
         document.getElementById('btn-en').classList.toggle('active', lang === 'en');
     }
 
-    // Intersection Observer untuk Scrollytelling
+    // Intersection Observer yang dioptimalkan untuk mobile
     const sections = document.querySelectorAll('.story-section');
     const mediaItems = document.querySelectorAll('.media-item');
+
+    // Menggunakan rootMargin agar deteksi lebih awal saat di-scroll
+    // -20% 0px -20% 0px artinya elemen akan aktif saat mencapai 20% dari atas/bawah layar
+    const observerOptions = {
+        root: null, 
+        rootMargin: '-20% 0px -20% 0px', 
+        threshold: 0 
+    };
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const index = entry.target.getAttribute('data-index');
+                
+                // Update active state
                 sections.forEach(s => s.classList.remove('active'));
                 mediaItems.forEach(m => m.classList.remove('active'));
                 
@@ -760,7 +770,7 @@
                 mediaItems[index].classList.add('active');
             }
         });
-    }, { threshold: 0.6 });
+    }, observerOptions);
 
     sections.forEach(section => observer.observe(section));
 </script>
