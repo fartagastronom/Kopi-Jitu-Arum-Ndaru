@@ -441,14 +441,13 @@
                 </div>
                 </section>
 
-                        <!-- SECTION 7: NUTRITION FACTS -->
-        <section class="story-section" data-index="7">
+                                <section class="story-section" data-index="7">
             <div class="card-content">
                 
-                <!-- INDONESIAN CONTENT -->
+                <!-- BAGIAN BAHASA INDONESIA -->
                 <div class="content-id">
                     <span class="meta-tag">Informasi Nilai Gizi</span>
-                    <h3 style="margin-bottom: 1rem; color: var(--accent-gold);">Informasi Nilai Gizi (Per 100ml Saji)</h3>
+                    <h3 style="margin-bottom: 1rem; color: var(--accent-gold);">Informasi Nilai Gizi (Per 135ml Saji)</h3>
                     <table style="width: 100%; border-collapse: collapse; margin-bottom: 2rem; border: 1px solid rgba(214, 163, 115, 0.3);">
                         <thead>
                             <tr style="background: rgba(212, 163, 115, 0.1);">
@@ -458,7 +457,7 @@
                             </tr>
                         </thead>
                         <tbody style="font-size: 0.9rem; text-align: center;">
-                            <tr><td style="padding: 8px; border: 1px solid rgba(214, 163, 115, 0.3); text-align: left;">Energi</td><td>45 kcal</td><td>12 kcal</td></tr>
+                            <tr><td style="padding: 8px; border: 1px solid rgba(214, 163, 115, 0.3); text-align: left;">Energi (Kalori)</td><td>45 kcal</td><td>12 kcal</td></tr>
                             <tr><td style="padding: 8px; border: 1px solid rgba(214, 163, 115, 0.3); text-align: left;">Karbohidrat</td><td>10.2 g</td><td>2.1 g</td></tr>
                             <tr><td style="padding: 8px; border: 1px solid rgba(214, 163, 115, 0.3); text-align: left;">Protein</td><td>0.8 g</td><td>0.3 g</td></tr>
                             <tr><td style="padding: 8px; border: 1px solid rgba(214, 163, 115, 0.3); text-align: left;">Lemak</td><td>0.2 g</td><td>0.1 g</td></tr>
@@ -466,10 +465,10 @@
                     </table>
                 </div>
 
-                <!-- ENGLISH CONTENT -->
+                <!-- BAGIAN BAHASA INGGRIS -->
                 <div class="content-en">
                     <span class="meta-tag">Nutrition Facts</span>
-                    <h3 style="margin-bottom: 1rem; color: var(--accent-gold);">Nutrition Facts (Per 100ml Serving)</h3>
+                    <h3 style="margin-bottom: 1rem; color: var(--accent-gold);">Nutrition Facts (Per 135ml Serving)</h3>
                     <table style="width: 100%; border-collapse: collapse; margin-bottom: 2rem; border: 1px solid rgba(214, 163, 115, 0.3);">
                         <thead>
                             <tr style="background: rgba(212, 163, 115, 0.1);">
@@ -479,7 +478,7 @@
                             </tr>
                         </thead>
                         <tbody style="font-size: 0.9rem; text-align: center;">
-                            <tr><td style="padding: 8px; border: 1px solid rgba(214, 163, 115, 0.3); text-align: left;">Energy</td><td>45 kcal</td><td>12 kcal</td></tr>
+                            <tr><td style="padding: 8px; border: 1px solid rgba(214, 163, 115, 0.3); text-align: left;">Energy (Calories)</td><td>45 kcal</td><td>12 kcal</td></tr>
                             <tr><td style="padding: 8px; border: 1px solid rgba(214, 163, 115, 0.3); text-align: left;">Carbohydrates</td><td>10.2 g</td><td>2.1 g</td></tr>
                             <tr><td style="padding: 8px; border: 1px solid rgba(214, 163, 115, 0.3); text-align: left;">Protein</td><td>0.8 g</td><td>0.3 g</td></tr>
                             <tr><td style="padding: 8px; border: 1px solid rgba(214, 163, 115, 0.3); text-align: left;">Fat</td><td>0.2 g</td><td>0.1 g</td></tr>
@@ -487,14 +486,10 @@
                     </table>
                 </div>
 
-                <!-- FOOTER (Berada di dalam card-content agar sinkron dengan bahasa) -->
+                <!-- FOOTER -->
                 <div class="research-footer">
-                    <div class="content-id">
-                        <p>Aplikasi ini merupakan prototipe riset Smart Gastronomi Kopi, UPN "Veteran" Jawa Timur.</p>
-                    </div>
-                    <div class="content-en">
-                        <p>This application is a research prototype of Coffee Smart Gastronomy, UPN "Veteran" Jawa Timur.</p>
-                    </div>
+                    <div class="content-id"><p>Aplikasi ini merupakan prototipe riset Smart Gastronomi Kopi, UPN "Veteran" Jawa Timur.</p></div>
+                    <div class="content-en"><p>This application is a research prototype of Coffee Smart Gastronomy, UPN "Veteran" Jawa Timur.</p></div>
                     <div class="logo-container">
                         <div class="logo-box"><img src="https://i.ibb.co.com/C3s6Rvnt/IMG-2222.png" alt="Logo 1"></div>
                         <div class="logo-box"><img src="https://i.ibb.co.com/5hDCrHht/IMG-2224.png" alt="Logo 2"></div>
@@ -503,8 +498,39 @@
                     </div>
                 </div>
 
-            </div> <!-- Penutup card-content -->
-        </section> <!-- Penutup section data-index="7" -->
+            </div>
+        </section>
 
     </div> <!-- Penutup narrative-side -->
 </div> <!-- Penutup container utama -->
+
+<script>
+    // Fungsi Switch Bahasa
+    function switchLang(lang) {
+        document.body.className = lang === 'en' ? 'lang-en' : '';
+        document.getElementById('btn-id').classList.toggle('active', lang === 'id');
+        document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    }
+
+    // Intersection Observer untuk Scrollytelling
+    const sections = document.querySelectorAll('.story-section');
+    const mediaItems = document.querySelectorAll('.media-item');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const index = entry.target.getAttribute('data-index');
+                sections.forEach(s => s.classList.remove('active'));
+                mediaItems.forEach(m => m.classList.remove('active'));
+                
+                entry.target.classList.add('active');
+                mediaItems[index].classList.add('active');
+            }
+        });
+    }, { threshold: 0.6 });
+
+    sections.forEach(section => observer.observe(section));
+</script>
+</body>
+</html>
+
