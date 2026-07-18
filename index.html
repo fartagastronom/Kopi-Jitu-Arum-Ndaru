@@ -27,34 +27,33 @@
         }
 
                                                 body {
-            overflow-x: hidden;
-            background-color: #120c0a;
-            /* Ornamen sebagai background */
-            background-image: url('https://i.ibb.co.com/5gWKBpmd/Untitled-design.png');
-            background-size: 250px;
-            background-repeat: repeat;
-            background-position: center;
-            /* Properti ini yang mengunci background agar tidak bergerak */
-            background-attachment: fixed;
-            position: relative;
-        }
+    overflow-x: hidden;
+    background-color: #120c0a;
+    /* Hapus baris background-image, size, repeat, position, attachment di sini */
+    /* Kita pindahkan semuanya ke body::before agar benar-benar terkunci */
+    position: relative;
+}
 
-        /* Overlay tipis agar teks tetap terbaca dengan jelas */
-        body::before {
-            content: "";
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            /* 0.85 memberikan keseimbangan antara ornamen yang terlihat dan teks yang terbaca */
-            background: rgba(18, 12, 10, 0.85); 
-            z-index: -1;
-            pointer-events: none;
-        }
-
-
-
+     body::before {
+    content: "";
+    position: fixed; /* Ini kuncinya agar diam/fixed */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    
+    /* Pindahkan pengaturan gambar ke sini */
+    background-image: url('https://i.ibb.co.com/5gWKBpmd/Untitled-design.png');
+    background-size: 250px;
+    background-repeat: repeat;
+    background-position: center;
+    
+    /* Overlay gelap agar teks terbaca */
+    background-color: rgba(18, 12, 10, 0.94); 
+    background-blend-mode: multiply;
+    pointer-events: none;
+}
 
 
         /* SISTEM KONDISI BILINGUAL */
